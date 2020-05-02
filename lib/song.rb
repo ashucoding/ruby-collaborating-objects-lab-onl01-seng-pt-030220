@@ -5,7 +5,6 @@ class Song
   def initialize(attributes)
     @name = attributes
     @artist = attributes
-    @artist_name = nil
     @@all << self
   end
   def self.all
@@ -22,7 +21,7 @@ class Song
    new_song
  end
 
- def artist_name(name)
+ def artist_name=(name)
    binding.pry
   @artist = Artist.new(name)
  end
