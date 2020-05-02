@@ -63,14 +63,12 @@ describe 'Song' do
 
       song = Song.new('Man in the Mirror')
       song.artist_name = "Michael Jackson"
-binding.pry
       expect(song.artist).to be_an(Artist)
       expect(song.artist.name).to eq("Michael Jackson")
       song_2 = Song.new('Thriller')
       song_2.artist_name = "Michael Jackson"
       expect(song_2.artist).to be_an(Artist)
       expect(song_2.artist.name).to eq("Michael Jackson")
-binding.pry
       expect(Artist.all.length).to eq(1)
     end
   end
