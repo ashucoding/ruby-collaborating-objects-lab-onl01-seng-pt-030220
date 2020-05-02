@@ -65,7 +65,7 @@ describe 'Song' do
       song.artist_name = "Michael Jackson"
       expect(song.artist).to be_an(Artist)
       expect(song.artist.name).to eq("Michael Jackson")
-
+binding.pry
       song_2 = Song.new('Thriller')
       song_2.artist_name = "Michael Jackson"
       expect(song_2.artist).to be_an(Artist)
