@@ -15,7 +15,6 @@ class Artist
   end
 
   def save
-    binding.pry
     @@all << self
     self
   end
@@ -25,7 +24,6 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    binding.pry
     self.all.detect {|artist| artist.name == name} || Artist.new(name)
   end
 
