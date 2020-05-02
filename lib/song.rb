@@ -3,8 +3,8 @@ class Song
 
 
   def initialize(attributes)
-    @name = attributes[:name]
-    @artist = Artist.new(attributes[:artist])
+    @name = attributes
+    @artist = attributes
     @@all << self
   end
   def self.all
