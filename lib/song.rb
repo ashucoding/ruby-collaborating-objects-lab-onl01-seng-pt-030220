@@ -22,6 +22,7 @@ class Song
  end
 
  def artist_name(name)
+   binding.pry
   @artist = Artist.new(name)
  end
 
