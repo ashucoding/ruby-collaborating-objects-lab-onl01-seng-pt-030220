@@ -4,7 +4,7 @@ class Song
 
   def initialize(attributes)
     @name = attributes[:name]
-    @artist = attributes[:artist]
+    @artist = Artist.new(attributes[:artist])
     @@all << self
   end
   def self.all
