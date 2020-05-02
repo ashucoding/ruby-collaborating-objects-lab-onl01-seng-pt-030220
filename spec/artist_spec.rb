@@ -5,41 +5,41 @@ describe 'Artist' do
   }
 
 
-  # describe '#initialize with #name' do
-  #   it 'accepts a name for the artist' do
-  #     artist = Artist.new('Michael Jackson')
-  #     expect(artist.name).to eq('Michael Jackson')
-  #   end
-  # end
-  #
-  # describe '#name=' do
-  #   it 'sets the artist name' do
-  #     artist = Artist.new('Michael Jackson')
-  #     artist.name = 'King of Pop'
-  #     expect(artist.name).to eq('King of Pop')
-  #   end
-  # end
-  #
-  # describe '.all' do
-  #   it 'returns all existing Artist instances' do
-  #     artist = Artist.new('Michael Jackson')
-  #     expect(Artist.all).to eq([artist])
-  #     prince = Artist.new('Prince')
-  #     expect(Artist.all).to eq([artist, prince])
-  #   end
-  # end
-  #
-  # describe '#add_song' do
-  #   it 'keeps track of an artist\'s songs' do
-  #     artist = Artist.new('Michael Jackson')
-  #     song_one = Song.new("Rock With You")
-  #     song_two = Song.new("Smooth Criminal")
-  #     smells_like_teen_spirit = Song.new("Smells Like Teen Spirit")
-  #     artist.add_song(song_one)
-  #     artist.add_song(song_two)
-  #     expect(artist.songs).to eq([song_one, song_two])
-  #   end
-  # end
+  describe '#initialize with #name' do
+    it 'accepts a name for the artist' do
+      artist = Artist.new('Michael Jackson')
+      expect(artist.name).to eq('Michael Jackson')
+    end
+  end
+  
+  describe '#name=' do
+    it 'sets the artist name' do
+      artist = Artist.new('Michael Jackson')
+      artist.name = 'King of Pop'
+      expect(artist.name).to eq('King of Pop')
+    end
+  end
+  
+  describe '.all' do
+    it 'returns all existing Artist instances' do
+      artist = Artist.new('Michael Jackson')
+      expect(Artist.all).to eq([artist])
+      prince = Artist.new('Prince')
+      expect(Artist.all).to eq([artist, prince])
+    end
+  end
+  
+  describe '#add_song' do
+    it 'keeps track of an artist\'s songs' do
+      artist = Artist.new('Michael Jackson')
+      song_one = Song.new("Rock With You")
+      song_two = Song.new("Smooth Criminal")
+      smells_like_teen_spirit = Song.new("Smells Like Teen Spirit")
+      artist.add_song(song_one)
+      artist.add_song(song_two)
+      expect(artist.songs).to eq([song_one, song_two])
+    end
+  end
 
   describe '#songs' do
     it 'lists all songs that belong to this artist' do
