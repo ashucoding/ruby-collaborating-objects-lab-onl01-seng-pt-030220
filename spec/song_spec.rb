@@ -53,7 +53,6 @@ describe 'Song' do
       new_instance = Song.new_by_filename(file_name)
       expect(new_instance.artist.name).to eq('Michael Jackson')
       expect(Artist.all.size).to eq(1)
-binding.pry
       expect(Artist.all.first.songs.empty?).to eq(false)
     end
   end
@@ -71,7 +70,7 @@ binding.pry
       song_2.artist_name = "Michael Jackson"
       expect(song_2.artist).to be_an(Artist)
       expect(song_2.artist.name).to eq("Michael Jackson")
-
+binding.pry
       expect(Artist.all.length).to eq(1)
     end
   end
